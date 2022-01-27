@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costes</title>
+    <script src="funciones.js"></script>
+   
+</head>
+<body bgcolor =" celeste ">
+    <style>
+    body{
+        color:white;
+        background-image: url('f.png');
+    }
+    </style>
+    <center>
+    <h1>REGISTROS DE VIAJES</h1>
+    <fieldset>
+        <legend>Requisito</legend>
+    <form action="funciones.js" class="formulario">
+        <label>Número de noches</label>
+        <br/>
+        <br/>
+        <input type="text" id="numNoches">
+        <br/>
+        <br/>
+        <select id="ciudad_destino">
+        <option value="quito">Quito</option>
+        <option value="japon">Japon</option>
+        <option value="rio">Rio De Janeiro</option>
+        <option value="rusia">Rusia</option>
+        </select>
+        <br/>
+        <br/>
+        <label>Seleccion de Coche</label>
+        <br/>
+        <br/>
+        <select id="coches">
+            <option value="lamborghini">Lamborghini</option>
+            <option value="hatchback">Hatchback</option>
+            <option value="mustang ">Mustang</option>
+            <option value="FSD">Ford Super Duty</option>
+        </select>
+        <br/>
+        <br/>
+
+        <input type="button" onclick="calcularCoste()" value="Calcular" class="boton">
+        <br/>
+        <br/>
+        <input type="text" id="result">
+    </form>
+</center>
+</fieldset>
+<br>
+<input type="button" onclick="location.href='menu_de busqueda.php';" value="Inicio" />
+</body>
+</html>
